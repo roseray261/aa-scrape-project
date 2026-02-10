@@ -46,9 +46,9 @@ export default async function LeaderboardPage({ params, searchParams }: PageProp
   if (!latestRow) {
     return (
       <div>
-        <Link href="/" className="text-blue-600 hover:underline text-sm">&larr; Back to leaderboards</Link>
-        <h1 className="text-3xl font-bold text-gray-900 mt-4 mb-4">{leaderboard.name}</h1>
-        <p className="text-gray-600">No data available yet. Check back after the scraper has run.</p>
+        <Link href="/" className="text-accent-blue hover:underline text-sm">&larr; Back to leaderboards</Link>
+        <h1 className="text-3xl font-bold text-text-primary mt-4 mb-4">{leaderboard.name}</h1>
+        <p className="text-text-secondary">No data available yet. Check back after the scraper has run.</p>
       </div>
     );
   }
@@ -87,14 +87,13 @@ export default async function LeaderboardPage({ params, searchParams }: PageProp
 
   return (
     <div>
-      <Link href="/" className="text-blue-600 hover:underline text-sm">&larr; Back to leaderboards</Link>
-      <h1 className="text-3xl font-bold text-gray-900 mt-4 mb-2">{leaderboard.name}</h1>
-      <p className="text-gray-600 mb-6">Latest snapshot: {latestDate}</p>
+      <Link href="/" className="text-accent-blue hover:underline text-sm">&larr; Back to leaderboards</Link>
+      <h1 className="text-3xl font-bold text-text-primary mt-4 mb-2">{leaderboard.name}</h1>
+      <p className="text-text-secondary mb-6">Latest snapshot: {latestDate}</p>
 
-      <LeaderboardTable models={(latestModels ?? []) as Snapshot[]} />
-
-      <section className="mt-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4">Creator Share Over Time</h2>
+      {/* Chart section — promoted above table */}
+      <section className="mb-12">
+        <h2 className="text-2xl font-bold text-text-primary mb-4">Creator Share Over Time</h2>
 
         {/* Timeframe buttons */}
         <div className="flex gap-2 mb-6">
@@ -104,8 +103,8 @@ export default async function LeaderboardPage({ params, searchParams }: PageProp
               href={`/leaderboards/${slug}?timeframe=${tf}`}
               className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                 tf === timeframe
-                  ? "bg-gray-900 text-white"
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  ? "bg-accent-blue text-white"
+                  : "bg-bg-surface text-text-secondary border border-border-default hover:border-border-strong hover:text-text-primary"
               }`}
             >
               {tf}
@@ -120,15 +119,21 @@ export default async function LeaderboardPage({ params, searchParams }: PageProp
             csvString={csvString!}
           />
         ) : (
-          <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 text-center">
-            <p className="text-gray-600">
+          <div className="rounded-lg border border-border-default bg-bg-surface p-8 text-center shadow-[var(--shadow-card)]">
+            <p className="text-text-secondary">
               Not enough data yet. The chart will appear once there are at least 2 days of snapshots.
             </p>
-            <p className="text-gray-500 text-sm mt-2">
+            <p className="text-text-muted text-sm mt-2">
               Currently tracking {uniqueDates.size} day{uniqueDates.size !== 1 ? "s" : ""} of data.
             </p>
           </div>
         )}
+      </section>
+
+      {/* Table section — below chart */}
+      <section>
+        <h2 className="text-2xl font-bold text-text-primary mb-4">Current Rankings</h2>
+        <LeaderboardTable models={(latestModels ?? []) as Snapshot[]} />
       </section>
     </div>
   );

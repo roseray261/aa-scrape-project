@@ -22,34 +22,37 @@ export default function ShareDataTable({ rows, creators, csvString }: Props) {
   return (
     <div className="mt-8">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-gray-900">
-          Data Table <span className="text-sm font-normal text-gray-500">(copy-pasteable for Think-Cell / Excel)</span>
+        <h3 className="text-lg font-semibold text-text-primary">
+          Data Table <span className="text-sm font-normal text-text-muted">(copy-pasteable for Think-Cell / Excel)</span>
         </h3>
         <button
           onClick={handleDownload}
-          className="px-4 py-2 rounded-md bg-gray-900 text-white text-sm font-medium hover:bg-gray-700 transition-colors"
+          className="px-4 py-2 rounded-md bg-btn-primary-bg text-white text-sm font-medium hover:bg-btn-primary-hover transition-colors"
         >
           Download CSV
         </button>
       </div>
-      <div className="overflow-x-auto rounded-lg border border-gray-200">
-        <table className="min-w-full divide-y divide-gray-200 text-sm font-mono">
-          <thead className="bg-gray-50">
+      <div className="overflow-x-auto rounded-lg border border-border-default">
+        <table className="min-w-full divide-y divide-border-default text-sm font-mono">
+          <thead className="bg-[var(--table-header-bg)]">
             <tr>
-              <th className="px-3 py-2 text-left font-semibold text-gray-700">Date</th>
+              <th className="px-3 py-2 text-left font-semibold text-text-secondary">Date</th>
               {creators.map((creator) => (
-                <th key={creator} className="px-3 py-2 text-right font-semibold text-gray-700">
+                <th key={creator} className="px-3 py-2 text-right font-semibold text-text-secondary">
                   {creator}
                 </th>
               ))}
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-100 bg-white">
-            {rows.map((row) => (
-              <tr key={row.date as string} className="hover:bg-gray-50">
-                <td className="px-3 py-1.5 text-gray-900">{row.date as string}</td>
+          <tbody className="divide-y divide-border-default bg-bg-surface">
+            {rows.map((row, i) => (
+              <tr
+                key={row.date as string}
+                className={`hover:bg-bg-elevated ${i % 2 === 1 ? "bg-[var(--table-row-alt)]" : ""}`}
+              >
+                <td className="px-3 py-1.5 text-text-primary">{row.date as string}</td>
                 {creators.map((creator) => (
-                  <td key={creator} className="px-3 py-1.5 text-right text-gray-700">
+                  <td key={creator} className="px-3 py-1.5 text-right text-text-secondary">
                     {row[creator] ?? 0}%
                   </td>
                 ))}
