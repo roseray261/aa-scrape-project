@@ -1,12 +1,14 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { supabase } from "@/lib/supabase";
+import { getSupabase } from "@/lib/supabase";
 import { getLeaderboardBySlug } from "@/lib/leaderboards";
 import { computeCreatorShares, chartDataToCsv } from "@/lib/chart-utils";
 import type { Snapshot } from "@/lib/supabase";
 import LeaderboardTable from "@/components/LeaderboardTable";
 import CreatorShareChart from "@/components/CreatorShareChart";
 import ShareDataTable from "@/components/ShareDataTable";
+
+export const dynamic = "force-dynamic";
 
 const TIMEFRAME_DAYS: Record<string, number> = {
   "7d": 7,
@@ -30,6 +32,8 @@ export default async function LeaderboardPage({ params, searchParams }: PageProp
     ? timeframeParam
     : "30d";
   const days = TIMEFRAME_DAYS[timeframe];
+
+  const supabase = getSupabase();
 
   // Fetch latest snapshot date for this leaderboard
   const { data: latestRow } = await supabase
