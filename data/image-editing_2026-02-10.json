@@ -1,0 +1,439 @@
+{
+  "leaderboard": "image-editing",
+  "fetched_at": "2026-02-10T16:38:45.462Z",
+  "model_count": 48,
+  "models": [
+    {
+      "rank": 1,
+      "name": "Riverflow 2.0",
+      "creator": "Sourceful",
+      "elo": 1279,
+      "ci95": "-9/9",
+      "samples": 6705,
+      "release_date": "2026-02"
+    },
+    {
+      "rank": 2,
+      "name": "GPT Image 1.5 (high)",
+      "creator": "OpenAI",
+      "elo": 1265,
+      "ci95": "-9/9",
+      "samples": 6607,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 3,
+      "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+      "creator": "Google",
+      "elo": 1248,
+      "ci95": "-8/8",
+      "samples": 7448,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 4,
+      "name": "Riverflow 2 Preview",
+      "creator": "Sourceful",
+      "elo": 1224,
+      "ci95": "-8/8",
+      "samples": 8312,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 5,
+      "name": "HunyuanImage 3.0 Instruct",
+      "creator": "Tencent",
+      "elo": 1209,
+      "ci95": "-12/12",
+      "samples": 3303,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 6,
+      "name": "Seedream 4.5",
+      "creator": "ByteDance Seed",
+      "elo": 1199,
+      "ci95": "-7/7",
+      "samples": 8750,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 7,
+      "name": "FLUX.2 [max]",
+      "creator": "Black Forest Labs",
+      "elo": 1197,
+      "ci95": "-11/11",
+      "samples": 3649,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 8,
+      "name": "Wan 2.6 Image",
+      "creator": "Alibaba",
+      "elo": 1187,
+      "ci95": "-9/9",
+      "samples": 5533,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 9,
+      "name": "Seedream 4.0",
+      "creator": "ByteDance Seed",
+      "elo": 1185,
+      "ci95": "-7/7",
+      "samples": 10895,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 10,
+      "name": "Riverflow 1",
+      "creator": "Sourceful",
+      "elo": 1183,
+      "ci95": "-7/7",
+      "samples": 9924,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 11,
+      "name": "Nano Banana (Gemini 2.5 Flash Image)",
+      "creator": "Google",
+      "elo": 1179,
+      "ci95": "-6/6",
+      "samples": 11201,
+      "release_date": "2025-08"
+    },
+    {
+      "rank": 12,
+      "name": "Reve V1 (December)",
+      "creator": "Reve",
+      "elo": 1173,
+      "ci95": "-9/9",
+      "samples": 5407,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 13,
+      "name": "FLUX.2 [pro]",
+      "creator": "Black Forest Labs",
+      "elo": 1170,
+      "ci95": "-8/8",
+      "samples": 7640,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 14,
+      "name": "FLUX.2 [flex]",
+      "creator": "Black Forest Labs",
+      "elo": 1168,
+      "ci95": "-8/8",
+      "samples": 7588,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 15,
+      "name": "FLUX.2 [klein] 9B",
+      "creator": "Black Forest Labs",
+      "elo": 1160,
+      "ci95": "-10/10",
+      "samples": 4867,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 16,
+      "name": "Qwen Image Edit Plus 2511",
+      "creator": "Alibaba",
+      "elo": 1152,
+      "ci95": "-10/10",
+      "samples": 4645,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 17,
+      "name": "Eigen Image",
+      "creator": "Eigen AI",
+      "elo": 1151,
+      "ci95": "-12/12",
+      "samples": 3325,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 18,
+      "name": "FLUX.2 [dev] Turbo",
+      "creator": "Fal",
+      "elo": 1146,
+      "ci95": "-9/9",
+      "samples": 5568,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 19,
+      "name": "Qwen Image Edit Max 2601",
+      "creator": "Alibaba",
+      "elo": 1140,
+      "ci95": "-12/12",
+      "samples": 3355,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 20,
+      "name": "P-Image-Edit",
+      "creator": "Pruna AI",
+      "elo": 1139,
+      "ci95": "-8/8",
+      "samples": 6402,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 21,
+      "name": "FLUX.2 [dev] Flash",
+      "creator": "Fal",
+      "elo": 1134,
+      "ci95": "-9/9",
+      "samples": 5543,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 22,
+      "name": "GPT Image 1 (high)",
+      "creator": "OpenAI",
+      "elo": 1134,
+      "ci95": "-6/6",
+      "samples": 10450,
+      "release_date": "2025-04"
+    },
+    {
+      "rank": 23,
+      "name": "Qwen Image Edit Plus 2509",
+      "creator": "Alibaba",
+      "elo": 1132,
+      "ci95": "-6/6",
+      "samples": 11238,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 24,
+      "name": "Vidu Q2",
+      "creator": "Vidu",
+      "elo": 1128,
+      "ci95": "-7/7",
+      "samples": 8966,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 25,
+      "name": "FLUX.2 [dev]",
+      "creator": "Black Forest Labs",
+      "elo": 1126,
+      "ci95": "-7/7",
+      "samples": 7821,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 26,
+      "name": "FLUX.2 [klein] Base 9B",
+      "creator": "Black Forest Labs",
+      "elo": 1122,
+      "ci95": "-10/10",
+      "samples": 4364,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 27,
+      "name": "Wan 2.5 Preview",
+      "creator": "Alibaba",
+      "elo": 1118,
+      "ci95": "-8/8",
+      "samples": 6883,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 28,
+      "name": "Reve V1 (October)",
+      "creator": "Reve",
+      "elo": 1108,
+      "ci95": "-6/6",
+      "samples": 10248,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 29,
+      "name": "FLUX.2 [klein] 4B",
+      "creator": "Black Forest Labs",
+      "elo": 1102,
+      "ci95": "-10/10",
+      "samples": 4744,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 30,
+      "name": "LongCat Image",
+      "creator": "Meituan",
+      "elo": 1092,
+      "ci95": "-10/10",
+      "samples": 4946,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 31,
+      "name": "FLUX.1 Kontext [max]",
+      "creator": "Black Forest Labs",
+      "elo": 1089,
+      "ci95": "-6/6",
+      "samples": 11809,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 32,
+      "name": "Qwen Image Edit",
+      "creator": "Alibaba",
+      "elo": 1078,
+      "ci95": "-6/6",
+      "samples": 11783,
+      "release_date": "2025-08"
+    },
+    {
+      "rank": 33,
+      "name": "SeedEdit 3.0",
+      "creator": "ByteDance Seed",
+      "elo": 1075,
+      "ci95": "-6/6",
+      "samples": 10583,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 34,
+      "name": "Step1X-Edit-v1p2",
+      "creator": "StepFun",
+      "elo": 1074,
+      "ci95": "-8/8",
+      "samples": 6876,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 35,
+      "name": "Firefly Image 5 Preview",
+      "creator": "Adobe",
+      "elo": 1073,
+      "ci95": "-7/7",
+      "samples": 8906,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 36,
+      "name": "FLUX.1 Kontext [pro]",
+      "creator": "Black Forest Labs",
+      "elo": 1072,
+      "ci95": "-7/7",
+      "samples": 10242,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 37,
+      "name": "FIBO Edit",
+      "creator": "Bria",
+      "elo": 1068,
+      "ci95": "-11/11",
+      "samples": 4076,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 38,
+      "name": "GPT Image 1 Mini (medium)",
+      "creator": "OpenAI",
+      "elo": 1046,
+      "ci95": "-7/7",
+      "samples": 10152,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 39,
+      "name": "FLUX.2 [klein] Base 4B",
+      "creator": "Black Forest Labs",
+      "elo": 1019,
+      "ci95": "-10/10",
+      "samples": 4783,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 40,
+      "name": "FLUX.1 Kontext [dev]",
+      "creator": "Black Forest Labs",
+      "elo": 1006,
+      "ci95": "-7/7",
+      "samples": 9044,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 41,
+      "name": "Gemini 2.0 Flash Preview",
+      "creator": "Google",
+      "elo": 1000,
+      "ci95": "0/0",
+      "samples": 3744,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 42,
+      "name": "HiDream-E1.1",
+      "creator": "HiDream",
+      "elo": 980,
+      "ci95": "-10/10",
+      "samples": 4692,
+      "release_date": "2025-07"
+    },
+    {
+      "rank": 43,
+      "name": "GLM-Image",
+      "creator": "Z AI",
+      "elo": 934,
+      "ci95": "-11/11",
+      "samples": 4822,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 44,
+      "name": "step1x-edit-v1p2-preview",
+      "creator": "StepFun",
+      "elo": 931,
+      "ci95": "-7/7",
+      "samples": 10882,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 45,
+      "name": "Bagel",
+      "creator": "Bytedance",
+      "elo": 907,
+      "ci95": "-8/8",
+      "samples": 8614,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 46,
+      "name": "OmniGen V2",
+      "creator": "VectorSpaceLab",
+      "elo": 906,
+      "ci95": "-8/8",
+      "samples": 9483,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 47,
+      "name": "Step1X-Edit",
+      "creator": "StepFun",
+      "elo": 835,
+      "ci95": "-9/9",
+      "samples": 8985,
+      "release_date": "2025-04"
+    },
+    {
+      "rank": 48,
+      "name": "HiDream-E1-Full",
+      "creator": "HiDream",
+      "elo": 823,
+      "ci95": "-13/13",
+      "samples": 3730,
+      "release_date": "2025-04"
+    }
+  ]
+}

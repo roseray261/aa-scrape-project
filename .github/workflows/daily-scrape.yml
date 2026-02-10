@@ -1,0 +1,48 @@
+# Runs the leaderboard scraper once per day and commits the snapshots.
+#
+# Cron schedule explained:
+#   ┌─ minute (0)
+#   │ ┌─ hour (15 = 3pm UTC)
+#   │ │ ┌─ day of month (* = every day)
+#   │ │ │ ┌─ month (* = every month)
+#   │ │ │ │ ┌─ day of week (* = every day)
+#   0 15 * * *
+#
+# 15:00 UTC = 10:00am Eastern (EST, winter) / 11:00am Eastern (EDT, summer).
+# GitHub Actions cron does not support time zones, so we pick a fixed UTC time.
+
+name: Daily Leaderboard Scrape
+
+on:
+  schedule:
+    - cron: "0 15 * * *"
+  workflow_dispatch: # allows you to click "Run workflow" manually in GitHub
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run scraper
+        env:
+          AA_API_KEY: ${{ secrets.AA_API_KEY }}
+        run: node scrapers/run.js
+
+      - name: Commit and push new snapshots
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          git diff --staged --quiet || git commit -m "Daily snapshot $(date -u +%Y-%m-%d)"
+          git push
