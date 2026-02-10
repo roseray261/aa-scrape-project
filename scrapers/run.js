@@ -30,6 +30,18 @@ const LEADERBOARDS = [
     slug: "image-editing",
     apiUrl: "https://artificialanalysis.ai/api/v2/data/media/image-editing",
   },
+  {
+    slug: "text-to-video",
+    apiUrl: "https://artificialanalysis.ai/api/v2/data/media/text-to-video",
+  },
+  {
+    slug: "image-to-video",
+    apiUrl: "https://artificialanalysis.ai/api/v2/data/media/image-to-video",
+  },
+  {
+    slug: "text-to-speech",
+    apiUrl: "https://artificialanalysis.ai/api/v2/data/media/text-to-speech",
+  },
 ];
 
 // Fetch one leaderboard from the API

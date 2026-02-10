@@ -1,0 +1,556 @@
+{
+  "leaderboard": "image-to-video",
+  "fetched_at": "2026-02-10T16:54:22.875Z",
+  "model_count": 61,
+  "models": [
+    {
+      "rank": 1,
+      "name": "grok-imagine-video",
+      "creator": "xAI",
+      "elo": 1339,
+      "ci95": "-11/11",
+      "samples": 4274,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 2,
+      "name": "GenFlare 2.0",
+      "creator": "Baidu",
+      "elo": 1331,
+      "ci95": "-7/7",
+      "samples": 8958,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 3,
+      "name": "Kling 2.5 Turbo 1080p",
+      "creator": "KlingAI",
+      "elo": 1305,
+      "ci95": "-9/9",
+      "samples": 5870,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 4,
+      "name": "Veo 3.1 Fast Preview",
+      "creator": "Google",
+      "elo": 1302,
+      "ci95": "-9/9",
+      "samples": 6057,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 5,
+      "name": "Vidu Q3 Pro",
+      "creator": "Vidu",
+      "elo": 1298,
+      "ci95": "-11/11",
+      "samples": 4093,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 6,
+      "name": "Veo 3.1 Preview",
+      "creator": "Google",
+      "elo": 1296,
+      "ci95": "-9/9",
+      "samples": 6094,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 7,
+      "name": "Hailuo 02 0616",
+      "creator": "MiniMax",
+      "elo": 1287,
+      "ci95": "-13/13",
+      "samples": 2953,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 8,
+      "name": "Avenger 0.5 Pro",
+      "creator": "Video Rebirth",
+      "elo": 1277,
+      "ci95": "-9/9",
+      "samples": 6116,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 9,
+      "name": "TeleVideo 2.0",
+      "creator": "TeleAI",
+      "elo": 1276,
+      "ci95": "-11/11",
+      "samples": 3802,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 10,
+      "name": "Runway Gen-4.5",
+      "creator": "Runway",
+      "elo": 1276,
+      "ci95": "-12/12",
+      "samples": 3235,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 11,
+      "name": "Kling 2.6 Standard (January)",
+      "creator": "KlingAI",
+      "elo": 1275,
+      "ci95": "-12/12",
+      "samples": 3455,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 12,
+      "name": "PixVerse V5.5",
+      "creator": "PixVerse",
+      "elo": 1275,
+      "ci95": "-11/11",
+      "samples": 4077,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 13,
+      "name": "PixVerse V5",
+      "creator": "PixVerse",
+      "elo": 1274,
+      "ci95": "-8/8",
+      "samples": 6474,
+      "release_date": "2025-08"
+    },
+    {
+      "rank": 14,
+      "name": "Kling 2.6 Pro (January)",
+      "creator": "KlingAI",
+      "elo": 1271,
+      "ci95": "-11/11",
+      "samples": 4086,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 15,
+      "name": "GenFlare",
+      "creator": "Baidu",
+      "elo": 1269,
+      "ci95": "-9/9",
+      "samples": 5698,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 16,
+      "name": "PixVerse V5.6",
+      "creator": "PixVerse",
+      "elo": 1261,
+      "ci95": "-12/12",
+      "samples": 3069,
+      "release_date": "2026-01"
+    },
+    {
+      "rank": 17,
+      "name": "Hailuo 02 Pro",
+      "creator": "MiniMax",
+      "elo": 1261,
+      "ci95": "-9/9",
+      "samples": 5749,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 18,
+      "name": "Kling 2.6 Pro (December)",
+      "creator": "KlingAI",
+      "elo": 1260,
+      "ci95": "-11/11",
+      "samples": 4017,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 19,
+      "name": "Seedance 1.5 pro",
+      "creator": "ByteDance Seed",
+      "elo": 1260,
+      "ci95": "-11/11",
+      "samples": 4015,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 20,
+      "name": "Hailuo 2.3",
+      "creator": "MiniMax",
+      "elo": 1259,
+      "ci95": "-8/8",
+      "samples": 6627,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 21,
+      "name": "Hailuo 2.3 Fast",
+      "creator": "MiniMax",
+      "elo": 1256,
+      "ci95": "-8/8",
+      "samples": 6838,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 22,
+      "name": "Vidu Q2 Turbo",
+      "creator": "Vidu",
+      "elo": 1253,
+      "ci95": "-9/9",
+      "samples": 5761,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 23,
+      "name": "Seedance 1.0",
+      "creator": "ByteDance Seed",
+      "elo": 1250,
+      "ci95": "-9/9",
+      "samples": 6022,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 24,
+      "name": "Vidu Q2 Pro",
+      "creator": "Vidu",
+      "elo": 1249,
+      "ci95": "-9/9",
+      "samples": 5768,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 25,
+      "name": "Wan 2.5 Preview",
+      "creator": "Alibaba",
+      "elo": 1245,
+      "ci95": "-9/9",
+      "samples": 6027,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 26,
+      "name": "Hailuo 02 Standard",
+      "creator": "MiniMax",
+      "elo": 1244,
+      "ci95": "-9/9",
+      "samples": 5994,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 27,
+      "name": "Avenger 0.5",
+      "creator": "Video Rebirth",
+      "elo": 1240,
+      "ci95": "-12/12",
+      "samples": 2950,
+      "release_date": "2025-07"
+    },
+    {
+      "rank": 28,
+      "name": "Veo 3 Preview",
+      "creator": "Google",
+      "elo": 1238,
+      "ci95": "-12/12",
+      "samples": 3299,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 29,
+      "name": "Veo 3",
+      "creator": "Google",
+      "elo": 1237,
+      "ci95": "-10/10",
+      "samples": 4569,
+      "release_date": "2025-07"
+    },
+    {
+      "rank": 30,
+      "name": "Ray 3",
+      "creator": "Luma Labs",
+      "elo": 1232,
+      "ci95": "-9/9",
+      "samples": 5628,
+      "release_date": "2025-09"
+    },
+    {
+      "rank": 31,
+      "name": "Kling 2.1 Master",
+      "creator": "KlingAI",
+      "elo": 1224,
+      "ci95": "-11/11",
+      "samples": 3610,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 32,
+      "name": "Wan 2.6",
+      "creator": "Alibaba",
+      "elo": 1216,
+      "ci95": "-12/12",
+      "samples": 3320,
+      "release_date": "2025-12"
+    },
+    {
+      "rank": 33,
+      "name": "Pika 2.5",
+      "creator": "Pika Art",
+      "elo": 1213,
+      "ci95": "-12/12",
+      "samples": 3355,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 34,
+      "name": "LTX-2 Pro",
+      "creator": "Lightricks",
+      "elo": 1200,
+      "ci95": "-8/8",
+      "samples": 7043,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 35,
+      "name": "Kling 2.1 Pro",
+      "creator": "KlingAI",
+      "elo": 1199,
+      "ci95": "-13/13",
+      "samples": 2869,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 36,
+      "name": "Hailuo 02 Fast",
+      "creator": "MiniMax",
+      "elo": 1199,
+      "ci95": "-9/9",
+      "samples": 6142,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 37,
+      "name": "Kling 2.0",
+      "creator": "KlingAI",
+      "elo": 1197,
+      "ci95": "-9/9",
+      "samples": 6719,
+      "release_date": "2025-04"
+    },
+    {
+      "rank": 38,
+      "name": "Kling 2.1 Standard",
+      "creator": "KlingAI",
+      "elo": 1194,
+      "ci95": "-12/12",
+      "samples": 2960,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 39,
+      "name": "LTX-2 Fast",
+      "creator": "Lightricks",
+      "elo": 1191,
+      "ci95": "-8/8",
+      "samples": 7034,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 40,
+      "name": "Animon AniCut Pro 1.6",
+      "creator": "Animon",
+      "elo": 1187,
+      "ci95": "-8/8",
+      "samples": 6451,
+      "release_date": "2025-10"
+    },
+    {
+      "rank": 41,
+      "name": "Midjourney V1",
+      "creator": "Midjourney",
+      "elo": 1173,
+      "ci95": "-13/13",
+      "samples": 2918,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 42,
+      "name": "Vivago 2.0",
+      "creator": "HiDream",
+      "elo": 1164,
+      "ci95": "-12/12",
+      "samples": 3395,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 43,
+      "name": "Seedance 1.0 Mini",
+      "creator": "ByteDance Seed",
+      "elo": 1158,
+      "ci95": "-13/13",
+      "samples": 2971,
+      "release_date": "2025-06"
+    },
+    {
+      "rank": 44,
+      "name": "PixVerse V4.5",
+      "creator": "PixVerse",
+      "elo": 1146,
+      "ci95": "-12/12",
+      "samples": 3432,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 45,
+      "name": "Kling 1.6 Pro",
+      "creator": "KlingAI",
+      "elo": 1143,
+      "ci95": "-8/8",
+      "samples": 7554,
+      "release_date": "2024-12"
+    },
+    {
+      "rank": 46,
+      "name": "HunyuanVideo-1.5 (Fal)",
+      "creator": "Tencent",
+      "elo": 1132,
+      "ci95": "-12/12",
+      "samples": 3521,
+      "release_date": "2025-11"
+    },
+    {
+      "rank": 47,
+      "name": "Wan 2.2 A14B",
+      "creator": "Alibaba",
+      "elo": 1127,
+      "ci95": "-11/11",
+      "samples": 3938,
+      "release_date": "2025-07"
+    },
+    {
+      "rank": 48,
+      "name": "Runway Gen 4",
+      "creator": "Runway",
+      "elo": 1123,
+      "ci95": "-5/5",
+      "samples": 15781,
+      "release_date": "2025-03"
+    },
+    {
+      "rank": 49,
+      "name": "Veo 2",
+      "creator": "Google",
+      "elo": 1117,
+      "ci95": "-8/8",
+      "samples": 7378,
+      "release_date": "2024-12"
+    },
+    {
+      "rank": 50,
+      "name": "LTX Video v0.9.7 13B",
+      "creator": "Lightricks",
+      "elo": 1057,
+      "ci95": "-14/14",
+      "samples": 2826,
+      "release_date": "2025-05"
+    },
+    {
+      "rank": 51,
+      "name": "Vidu Q1",
+      "creator": "Vidu",
+      "elo": 1052,
+      "ci95": "-13/13",
+      "samples": 3503,
+      "release_date": "2025-04"
+    },
+    {
+      "rank": 52,
+      "name": "I2V-01-Director",
+      "creator": "MiniMax",
+      "elo": 1050,
+      "ci95": "-5/5",
+      "samples": 15702,
+      "release_date": "2025-02"
+    },
+    {
+      "rank": 53,
+      "name": "Motion 2.0",
+      "creator": "Leonardo.Ai",
+      "elo": 1036,
+      "ci95": "-12/12",
+      "samples": 3701,
+      "release_date": "2025-07"
+    },
+    {
+      "rank": 54,
+      "name": "Marey",
+      "creator": "Moonvalley",
+      "elo": 1018,
+      "ci95": "-10/10",
+      "samples": 6234,
+      "release_date": "2025-07"
+    },
+    {
+      "rank": 55,
+      "name": "Runway Gen 3 Alpha Turbo",
+      "creator": "Runway",
+      "elo": 1013,
+      "ci95": "-5/5",
+      "samples": 15835,
+      "release_date": "2024-08"
+    },
+    {
+      "rank": 56,
+      "name": "Pika 2.2",
+      "creator": "Pika Art",
+      "elo": 1007,
+      "ci95": "-8/8",
+      "samples": 7673,
+      "release_date": "2025-02"
+    },
+    {
+      "rank": 57,
+      "name": "Wan 2.1 14B",
+      "creator": "Alibaba",
+      "elo": 1000,
+      "ci95": "0/0",
+      "samples": 7517,
+      "release_date": "2025-02"
+    },
+    {
+      "rank": 58,
+      "name": "Runway Gen 3 Alpha",
+      "creator": "Runway",
+      "elo": 995,
+      "ci95": "-8/8",
+      "samples": 7324,
+      "release_date": "2024-06"
+    },
+    {
+      "rank": 59,
+      "name": "Wan 2.2 5B",
+      "creator": "Alibaba",
+      "elo": 988,
+      "ci95": "-12/12",
+      "samples": 4522,
+      "release_date": "2025-07"
+    },
+    {
+      "rank": 60,
+      "name": "Sora",
+      "creator": "OpenAI",
+      "elo": 972,
+      "ci95": "-8/8",
+      "samples": 7453,
+      "release_date": "2024-12"
+    },
+    {
+      "rank": 61,
+      "name": "Hunyuan Video (Open Source)",
+      "creator": "Tencent",
+      "elo": 934,
+      "ci95": "-9/9",
+      "samples": 7301,
+      "release_date": "2024-12"
+    }
+  ]
+}

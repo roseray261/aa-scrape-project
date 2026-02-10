@@ -14,6 +14,9 @@ A tool that collects daily snapshots of AI leaderboards and lets you view how ra
 |------|---------------|
 | `text-to-image` | Text-to-image model rankings (ELO) |
 | `image-editing` | Image editing model rankings (ELO) |
+| `text-to-video` | Text-to-video model rankings (ELO) |
+| `image-to-video` | Image-to-video model rankings (ELO) |
+| `text-to-speech` | Text-to-speech model rankings (ELO) |
 
 To add a new leaderboard, add an entry to the `LEADERBOARDS` array in `scrapers/run.js`.
 

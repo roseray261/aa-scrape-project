@@ -1,0 +1,556 @@
+{
+  "leaderboard": "text-to-speech",
+  "fetched_at": "2026-02-10T16:54:23.029Z",
+  "model_count": 61,
+  "models": [
+    {
+      "rank": 1,
+      "name": "Inworld TTS 1 Max",
+      "creator": "Inworld",
+      "elo": 1162,
+      "ci95": "-15/15",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 2,
+      "name": "Inworld TTS 1.5 Max",
+      "creator": "Inworld",
+      "elo": 1115,
+      "ci95": "-19/19",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 3,
+      "name": "TTS-1",
+      "creator": "OpenAI",
+      "elo": 1111,
+      "ci95": "-8/8",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 4,
+      "name": "Speech-02-Turbo",
+      "creator": "MiniMax",
+      "elo": 1107,
+      "ci95": "-11/11",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 5,
+      "name": "Multilingual v2",
+      "creator": "ElevenLabs",
+      "elo": 1105,
+      "ci95": "-7/7",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 6,
+      "name": "Speech-02-HD",
+      "creator": "MiniMax",
+      "elo": 1105,
+      "ci95": "-11/11",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 7,
+      "name": "Speech 2.6 HD",
+      "creator": "MiniMax",
+      "elo": 1105,
+      "ci95": "-12/12",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 8,
+      "name": "Speech 2.6 Turbo",
+      "creator": "MiniMax",
+      "elo": 1103,
+      "ci95": "-12/12",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 9,
+      "name": "Turbo v2.5",
+      "creator": "ElevenLabs",
+      "elo": 1096,
+      "ci95": "-7/7",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 10,
+      "name": "ElevenLabs v3 - Alpha",
+      "creator": "ElevenLabs",
+      "elo": 1095,
+      "ci95": "-11/11",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 11,
+      "name": "Inworld TTS 1",
+      "creator": "Inworld",
+      "elo": 1095,
+      "ci95": "-10/10",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 12,
+      "name": "Flash v2.5",
+      "creator": "ElevenLabs",
+      "elo": 1088,
+      "ci95": "-8/8",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 13,
+      "name": "Step TTS 2",
+      "creator": "StepFun",
+      "elo": 1075,
+      "ci95": "-20/20",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 14,
+      "name": "OpenAudio S1",
+      "creator": "Fish Audio",
+      "elo": 1070,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 15,
+      "name": "OpenAudio S1 Mini",
+      "creator": "Fish Audio",
+      "elo": 1061,
+      "ci95": "-12/12",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 16,
+      "name": "Kokoro 82M v1.0",
+      "creator": "Kokoro",
+      "elo": 1060,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 17,
+      "name": "TTS-1 HD",
+      "creator": "OpenAI",
+      "elo": 1059,
+      "ci95": "-15/15",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 18,
+      "name": "Polly Generative",
+      "creator": "Amazon",
+      "elo": 1057,
+      "ci95": "-10/10",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 19,
+      "name": "T2A-01-HD",
+      "creator": "MiniMax",
+      "elo": 1056,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 20,
+      "name": "Sonic 3",
+      "creator": "Cartesia",
+      "elo": 1054,
+      "ci95": "-14/14",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 21,
+      "name": "Polly Long-Form",
+      "creator": "Amazon",
+      "elo": 1053,
+      "ci95": "-19/19",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 22,
+      "name": "Octave 2",
+      "creator": "Hume AI",
+      "elo": 1051,
+      "ci95": "-14/14",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 23,
+      "name": "Azure Neural",
+      "creator": "Microsoft Azure",
+      "elo": 1050,
+      "ci95": "-7/7",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 24,
+      "name": "Chatterbox HD",
+      "creator": "Resemble AI",
+      "elo": 1048,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 25,
+      "name": "Studio",
+      "creator": "Google",
+      "elo": 1045,
+      "ci95": "-10/10",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 26,
+      "name": "GPT-4o mini TTS",
+      "creator": "OpenAI",
+      "elo": 1044,
+      "ci95": "-16/16",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 27,
+      "name": "Async Flash v1.0",
+      "creator": "async",
+      "elo": 1041,
+      "ci95": "-11/11",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 28,
+      "name": "Sonic English (Oct '24)",
+      "creator": "Cartesia",
+      "elo": 1033,
+      "ci95": "-13/13",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 29,
+      "name": "T2A-01-Turbo",
+      "creator": "MiniMax",
+      "elo": 1032,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 30,
+      "name": "Simba",
+      "creator": "Speechify",
+      "elo": 1032,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 31,
+      "name": "Maya1",
+      "creator": "Maya Research",
+      "elo": 1030,
+      "ci95": "-14/14",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 32,
+      "name": "Chirp 3: HD",
+      "creator": "Google",
+      "elo": 1027,
+      "ci95": "-14/14",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 33,
+      "name": "Octave TTS",
+      "creator": "Hume AI",
+      "elo": 1027,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 34,
+      "name": "Gemini 2.5 Pro (Dec 2025)",
+      "creator": "Google",
+      "elo": 1026,
+      "ci95": "-18/18",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 35,
+      "name": "Fish Speech 1.5",
+      "creator": "Fish Audio",
+      "elo": 1026,
+      "ci95": "-8/8",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 36,
+      "name": "Journey",
+      "creator": "Google",
+      "elo": 1025,
+      "ci95": "-18/18",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 37,
+      "name": "Gemini 2.5 Flash TTS",
+      "creator": "Google",
+      "elo": 1023,
+      "ci95": "-11/11",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 38,
+      "name": "Gemini 2.5 Pro TTS",
+      "creator": "Google",
+      "elo": 1022,
+      "ci95": "-11/11",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 39,
+      "name": "Chatterbox",
+      "creator": "Resemble AI",
+      "elo": 1013,
+      "ci95": "-9/9",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 40,
+      "name": "Gemini 2.5 Flash Lite TTS",
+      "creator": "Google",
+      "elo": 1013,
+      "ci95": "-19/19",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 41,
+      "name": "Magpie-Multilingual 357M",
+      "creator": "NVIDIA",
+      "elo": 1006,
+      "ci95": "-12/12",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 42,
+      "name": "Gemini 2.5 Flash TTS (Dec 2025)",
+      "creator": "Google",
+      "elo": 1004,
+      "ci95": "-18/18",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 43,
+      "name": "Zonos-v0.1",
+      "creator": "Zyphra",
+      "elo": 1000,
+      "ci95": "0/0",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 44,
+      "name": "Magpie Multilingual",
+      "creator": "NVIDIA",
+      "elo": 992,
+      "ci95": "-16/16",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 45,
+      "name": "Murf Speech Gen 2",
+      "creator": "Murf AI",
+      "elo": 987,
+      "ci95": "-8/8",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 46,
+      "name": "LMNT",
+      "creator": "LMNT",
+      "elo": 982,
+      "ci95": "-10/10",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 47,
+      "name": "VibeVoice 1.5B",
+      "creator": "Microsoft Azure",
+      "elo": 980,
+      "ci95": "-17/17",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 48,
+      "name": "Qwen3 TTS Flash",
+      "creator": "Alibaba",
+      "elo": 974,
+      "ci95": "-18/18",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 49,
+      "name": "OpenVoice v2",
+      "creator": "OpenVoice",
+      "elo": 973,
+      "ci95": "-7/7",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 50,
+      "name": "VibeVoice 7B",
+      "creator": "Microsoft Azure",
+      "elo": 970,
+      "ci95": "-17/17",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 51,
+      "name": "Step TTS Mini",
+      "creator": "StepFun",
+      "elo": 959,
+      "ci95": "-10/10",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 52,
+      "name": "Neuphonic TTS",
+      "creator": "Neuphonic",
+      "elo": 950,
+      "ci95": "-20/20",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 53,
+      "name": "Falcon (Beta)",
+      "creator": "Murf AI",
+      "elo": 943,
+      "ci95": "-27/27",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 54,
+      "name": "Polly Neural",
+      "creator": "Amazon",
+      "elo": 942,
+      "ci95": "-14/14",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 55,
+      "name": "XTTS v2",
+      "creator": "Coqui",
+      "elo": 910,
+      "ci95": "-8/8",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 56,
+      "name": "WaveNet",
+      "creator": "Google",
+      "elo": 903,
+      "ci95": "-7/7",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 57,
+      "name": "StyleTTS 2",
+      "creator": "StyleTTS ",
+      "elo": 901,
+      "ci95": "-8/8",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 58,
+      "name": "Standard",
+      "creator": "Google",
+      "elo": 874,
+      "ci95": "-7/7",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 59,
+      "name": "Neural2",
+      "creator": "Google",
+      "elo": 871,
+      "ci95": "-7/7",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 60,
+      "name": "Polly Standard",
+      "creator": "Amazon",
+      "elo": 843,
+      "ci95": "-11/11",
+      "samples": null,
+      "release_date": null
+    },
+    {
+      "rank": 61,
+      "name": "MetaVoice v1",
+      "creator": "MetaVoice",
+      "elo": 825,
+      "ci95": "-13/13",
+      "samples": null,
+      "release_date": null
+    }
+  ]
+}
