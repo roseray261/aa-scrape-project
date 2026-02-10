@@ -5,8 +5,7 @@ import { getLeaderboardBySlug } from "@/lib/leaderboards";
 import { computeCreatorShares, chartDataToCsv } from "@/lib/chart-utils";
 import type { Snapshot } from "@/lib/supabase";
 import LeaderboardTable from "@/components/LeaderboardTable";
-import CreatorShareChart from "@/components/CreatorShareChart";
-import ShareDataTable from "@/components/ShareDataTable";
+import CreatorShareSection from "@/components/CreatorShareSection";
 
 export const dynamic = "force-dynamic";
 
@@ -115,10 +114,11 @@ export default async function LeaderboardPage({ params, searchParams }: PageProp
         </div>
 
         {hasEnoughData && chartData ? (
-          <>
-            <CreatorShareChart rows={chartData.rows} creators={chartData.creators} />
-            <ShareDataTable rows={chartData.rows} creators={chartData.creators} csvString={csvString!} />
-          </>
+          <CreatorShareSection
+            rows={chartData.rows}
+            creators={chartData.creators}
+            csvString={csvString!}
+          />
         ) : (
           <div className="rounded-lg border border-gray-200 bg-gray-50 p-8 text-center">
             <p className="text-gray-600">
