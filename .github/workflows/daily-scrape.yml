@@ -37,6 +37,8 @@ jobs:
       - name: Run scraper
         env:
           AA_API_KEY: ${{ secrets.AA_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: node scrapers/run.js
 
       - name: Commit and push new snapshots

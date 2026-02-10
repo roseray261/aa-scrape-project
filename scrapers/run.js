@@ -5,6 +5,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { createClient } = require("@supabase/supabase-js");
 
 // Load .env from the project root (one level above scrapers/).
 // In GitHub Actions there's no .env file — the key comes from a
@@ -17,6 +18,18 @@ if (!apiKey || apiKey === "paste-your-actual-key-here") {
   console.error("ERROR: Please set your API key in the .env file.");
   process.exit(1);
 }
+
+// ---- SUPABASE ----
+// Connect to Supabase so we can store snapshots in a database.
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_KEY;
+
+if (!supabaseUrl || !supabaseKey) {
+  console.error("ERROR: Please set SUPABASE_URL and SUPABASE_KEY in the .env file.");
+  process.exit(1);
+}
+
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 // ---- LEADERBOARD REGISTRY ----
 // To add a new leaderboard, just add a new { slug, apiUrl } entry here.
@@ -86,6 +99,35 @@ function saveSnapshot(slug, snapshot) {
   return filename;
 }
 
+// Upload snapshot rows to Supabase
+async function uploadToSupabase(slug, snapshot) {
+  const today = new Date().toISOString().slice(0, 10);
+
+  // Convert each model into a row for the "snapshots" table
+  const rows = snapshot.models.map((m) => ({
+    leaderboard: slug,
+    fetched_at: today,
+    rank: m.rank,
+    name: m.name,
+    creator: m.creator,
+    elo: m.elo,
+    ci95: m.ci95,
+    samples: m.samples,
+    release_date: m.release_date,
+  }));
+
+  // upsert = insert new rows, skip if they already exist (based on UNIQUE constraint)
+  const { error } = await supabase
+    .from("snapshots")
+    .upsert(rows, { onConflict: "leaderboard,fetched_at,name" });
+
+  if (error) {
+    throw new Error(`Supabase upload failed: ${error.message}`);
+  }
+
+  return rows.length;
+}
+
 // Print a short summary: model count + top 5 by ELO
 function printSummary(slug, snapshot) {
   console.log(`--- ${slug} ---`);
@@ -110,9 +152,11 @@ async function main() {
 
     const snapshot = buildSnapshot(slug, models);
     const filename = saveSnapshot(slug, snapshot);
+    const rowCount = await uploadToSupabase(slug, snapshot);
 
     printSummary(slug, snapshot);
-    console.log(`  Saved to data/${filename}\n`);
+    console.log(`  Saved to data/${filename}`);
+    console.log(`  Uploaded ${rowCount} rows to Supabase\n`);
   }
 
   console.log("Done.");
