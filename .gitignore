@@ -1,3 +1,8 @@
 # Never upload these files
 .env
 node_modules/
+
+# Dashboard
+dashboard/.env.local
+dashboard/node_modules/
+dashboard/.next/
