@@ -8,27 +8,27 @@ export const LEADERBOARDS: Leaderboard[] = [
   {
     slug: "text-to-image",
     name: "Text to Image",
-    description: "Ranking of AI models that generate images from text prompts",
+    description: "Generating images from text prompts",
   },
   {
     slug: "image-editing",
     name: "Image Editing",
-    description: "Ranking of AI models for editing and modifying images",
+    description: "Editing and modifying images",
   },
   {
     slug: "text-to-video",
     name: "Text to Video",
-    description: "Ranking of AI models that generate videos from text prompts",
+    description: "Generating videos from text prompts",
   },
   {
     slug: "image-to-video",
     name: "Image to Video",
-    description: "Ranking of AI models that generate videos from images",
+    description: "Generating videos from images",
   },
   {
     slug: "text-to-speech",
     name: "Text to Speech",
-    description: "Ranking of AI models that generate speech from text",
+    description: "Generating speech from text",
   },
 ];
 

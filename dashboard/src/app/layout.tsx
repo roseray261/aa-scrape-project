@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const nunito = Nunito({
+  variable: "--font-nunito",
   subsets: ["latin"],
+  weight: ["700", "800", "900"],
 });
 
 const geistMono = Geist_Mono({
@@ -14,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI Leaderboard Tracker",
-  description: "Daily snapshots of AI model leaderboards from Artificial Analysis",
+  title: "AI Media Model Quality Tracker",
+  description: "Daily snapshots of AI media model quality from Artificial Analysis",
 };
 
 export default function RootLayout({
@@ -26,12 +27,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nunito.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="bg-bg-surface border-b border-border-default px-4 py-2 text-center text-sm text-text-secondary">
+            Link to Artificial Analysis leaderboards here:{" "}
+            <a
+              href="https://huggingface.co/ArtificialAnalysis"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-accent-blue hover:underline"
+            >
+              https://huggingface.co/ArtificialAnalysis
+            </a>
+          </div>
         <header className="border-b border-border-default bg-bg-header">
           <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
             <Link href="/" className="text-xl font-bold text-text-primary hover:text-accent-blue transition-colors">
-              AI Leaderboard Tracker
+              AI Media Model Quality Tracker
             </Link>
           </div>
         </header>

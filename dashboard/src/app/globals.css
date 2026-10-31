@@ -45,14 +45,19 @@
   --color-border-strong: var(--border-strong);
   --color-btn-primary-bg: var(--btn-primary-bg);
   --color-btn-primary-hover: var(--btn-primary-hover);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: Helvetica, Arial, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
 body {
-  background: var(--bg-base);
+  background: linear-gradient(135deg, #111118 0%, #1e1e2a 50%, #111118 100%) fixed;
   color: var(--text-primary);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-nunito), sans-serif;
 }
 
 /* Dark scrollbar for Chromium */
