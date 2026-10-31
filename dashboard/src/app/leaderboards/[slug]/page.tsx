@@ -63,8 +63,8 @@ export default async function LeaderboardPage({ params, searchParams }: PageProp
     .eq("fetched_at", latestDate)
     .order("rank", { ascending: true });
 
-  // Fetch historical data for chart (within timeframe)
-  const cutoffDate = new Date();
+  // Fetch historical data for chart (within timeframe, relative to latest snapshot)
+  const cutoffDate = new Date(latestDate);
   cutoffDate.setDate(cutoffDate.getDate() - days);
   const cutoffStr = cutoffDate.toISOString().slice(0, 10);
 
